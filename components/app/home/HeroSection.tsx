@@ -26,9 +26,7 @@ export default function HeroSection() {
 
     return () => clearInterval(interval);
   }, []);
-
-  const mainLink: string = `${info.github}/releases/download/v${info.appVersion}/${info.appName}_${info.appVersion}`;
-
+  
   const getDownloadUrl = (): string => {
     const normalizedOS = osName.replace(/\s/g, '');
     const currentLink: AppLink = links.find(link => link.os === normalizedOS) || links[0];
