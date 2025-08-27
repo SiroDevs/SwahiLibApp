@@ -10,10 +10,10 @@ import { AppLink, links } from "@/utils/data/app-links";
 import { motion, AnimatePresence } from "framer-motion";
 
 const texts = [
-  "Your Songbook on the GO",
-  "Your Songbook on Phone",
-  "Your Songbook on the PC",
-  "Your Songbook With You",
+  "Maneno 16,000+ ya Kiswahili",
+  "Nahau 100+ ya Kiswahili",
+  "Misemo 200+ ya Kiswahili",
+  "Methali 300+ ya Kiswahili",
 ];
 
 export default function HeroSection() {
@@ -35,13 +35,9 @@ export default function HeroSection() {
     let downloadUrl: string = "/download";
 
     switch (osName) {
+      case "Android":
       case "iOS":
         downloadUrl = currentLink.url;
-
-      case "Windows":
-      case "Linux":
-      case "Mac OS":
-        downloadUrl = `${mainLink}${currentLink.ext}`;
     }
     return downloadUrl;
   };
@@ -57,10 +53,10 @@ export default function HeroSection() {
         className="rounded-lg transition-all duration-1000 hover:grayscale-0 hover:scale-110 cursor-pointer mb-1"
       />
       <h2 className="text-center text-primary font-bold text-2xl leading-10 text-black">
-        What if, you had ...
+        Kwenye simu yako pata ...
       </h2>
 
-      <h1 className="text-[#ea580c] font-bold rounded-md text-3xl sm:text-2xl md:text-xl lg:text-[2.2rem] leading-tight lg:leading-[2.8rem] mb-3">
+      <h1 className="text-[#001F5C] font-bold rounded-md text-3xl sm:text-2xl md:text-xl lg:text-[2.2rem] leading-tight lg:leading-[2.8rem] mb-3">
         <div className="h-[3rem] flex justify-center items-center w-full overflow-hidden">
           <AnimatePresence mode="wait">
             <motion.span
@@ -80,16 +76,16 @@ export default function HeroSection() {
 
 
       <Link
-        className="flex items-center gap-1 hover:gap-3 rounded-full bg-gradient-to-r from-orange-600 to-orange-900 px-3 md:px-8 py-3 md:py-4 text-center text-xs md:text-sm font-medium uppercase tracking-wider text-white no-underline transition-all duration-200 ease-out hover:text-white hover:no-underline md:font-semibold"
+        className="flex items-center gap-1 hover:gap-3 rounded-full bg-gradient-to-r from-blue-600 to-blue-900 px-3 md:px-8 py-3 md:py-4 text-center text-xs md:text-sm font-medium uppercase tracking-wider text-white no-underline transition-all duration-200 ease-out hover:text-white hover:no-underline md:font-semibold"
         href={getDownloadUrl()}
         role="button"
         rel="noopener noreferrer"
       >
-        <span className="text-xl">Get Songlib Today</span>
+        <span className="text-xl">Pata SwahiLib Leo</span>
         <MdDownload size={16} />
       </Link>
 
-      <p className="text-primary text-sm mt-2">For {osName}</p>
+      <p className="text-primary text-sm mt-2">Kwenye {osName}</p>
     </section>
   );
 };

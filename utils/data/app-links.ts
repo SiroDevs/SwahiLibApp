@@ -5,7 +5,6 @@ export interface AppLink {
   type: string;
   ext: string;
   url: string;
-  subLinks?: AppLink[];
 }
 
 export const links: AppLink[] = [
@@ -15,7 +14,7 @@ export const links: AppLink[] = [
     title: 'Android',
     type: 'mobile',
     ext: '.apk',
-    url: 'https://play.google.com/store/apps/details?id=com.songlib'
+    url: 'https://play.google.com/store/apps/details?id=com.swahilib'
   },
   {
     id: 2,
@@ -23,38 +22,6 @@ export const links: AppLink[] = [
     title: 'iOS',
     type: 'mobile',
     ext: '.ipa',
-    url: 'https://apps.apple.com/app/id6446771305'
-  },
-  {
-    id: 3,
-    os: 'Windows',
-    title: 'Windows',
-    type: 'desktop',
-    ext: '.exe',
-    url: ''
-  },
-  {
-    id: 4,
-    os: 'Linux',
-    title: '.deb',
-    type: 'desktop',
-    ext: '.deb',
-    url: 'Debian, Ubuntu'
-  },
-  {
-    id: 5,
-    os: 'Linux',
-    title: '.rpm',
-    type: 'desktop',
-    ext: '.rpm',
-    url: 'Red Hat, Fedora, SUSE'
-  },
-  {
-    id: 6,
-    title: 'Mac',
-    type: 'desktop',
-    os: 'MacOS',
-    ext: '.dmg',
-    url: ''
+    url: 'https://apps.apple.com/us/app/id6446771678'
   },
 ];

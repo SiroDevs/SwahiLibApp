@@ -7,27 +7,22 @@ export interface Feature {
 export const features: Feature[] = [
   {
     id: 1,
-    title: '14 Songbooks to choose from',
-    description: "Create your own collection from your favorite church hymns",
+    title: 'Maneno, Nahau, Misemo, Methali',
+    description: "Ni mkusanyiko mkuu wa maneno zaidi ya 16k, nahau, misemo na methali za Kiswahili",
   },
   {
     id: 2,
-    title: 'Real-time searching of songs',
-    description: "You can search the songs in your collection based on title, number or words in the song",
+    title: 'Hufanya kazi Nje ya Mtandao',
+    description: "Programu inakusudiwa kufanya kazi mbali na ufikiaji wa mtandao mara tu utakapomaliza kuisanidi",
   },
   {
     id: 3,
-    title: 'Slide through song verses',
-    description: "You can swipe up and down to navigate from one verse to the next",
+    title: 'Utafutaji wa moja kwa moja',
+    description: "Unaweza kutafuta maneno, nahau, misemo na methali moja kwa moja",
   },
   {
     id: 4,
-    title: 'Supported by the major platforms',
-    description: "Songlib is available on Android, iOS, Windows, Linux and MacOS",
-  },
-  {
-    id: 5,
-    title: 'Works Offline once done setting up',
-    description: "The app is meant to work away from internet access once you are done with setting it up",
+    title: 'Ipate kwenye android na ios',
+    description: "Kamusi inapatikana kwenye majukwaa ya Android na iOS",
   },
 ];

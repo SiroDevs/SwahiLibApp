@@ -76,7 +76,7 @@ const GlowCard: React.FC<GlowCardProps> = ({ children, identifier }) => {
   return (
     <div className={`glow-container-${identifier} glow-container drop-shadow-3xl`}>
       <article
-        className={`glow-card glow-card-${identifier} h-fit cursor-pointer border border-[#ccc] transition-all duration-300 relative bg-[#432B25] text-[#EEDAC4] rounded-xl hover:border-transparent w-full`}
+        className={`glow-card glow-card-${identifier} h-fit cursor-pointer border border-[#ccc] transition-all duration-300 relative bg-[#000F40] text-[#EEDAC4] rounded-xl hover:border-transparent w-full`}
       >
         <div className="glows"></div>
         {children}

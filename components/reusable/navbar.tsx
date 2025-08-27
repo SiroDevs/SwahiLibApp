@@ -8,9 +8,8 @@ import { useEffect, useState } from "react";
 import { usePathname } from "next/navigation";
 
 const navigation = [
-  { name: 'Features', path: '#features' },
-  { name: 'Donate Today', path: '/donate' },
-  { name: 'Privacy Policy', path: '/privacy-policy' },
+  { name: 'Vipengele', path: '/#vipengele' },
+  { name: 'Sera ya Faragha', path: '/sera-ya-faragha' },
 ];
 
 function classNames(...classes: string[]) {
@@ -27,7 +26,7 @@ const Navbar: React.FC = () => {
     };
 
     window.addEventListener("hashchange", handleHashChange);
-    handleHashChange(); // Set initial value
+    handleHashChange();
 
     return () => window.removeEventListener("hashchange", handleHashChange);
   }, []);
@@ -63,7 +62,7 @@ const Navbar: React.FC = () => {
                       key={item.name}
                       href={item.path}
                       className={classNames(
-                        isActive ? 'bg-[#b86918] text-white' : 'text-[#b86918] hover:bg-[#bf360c] hover:text-white',
+                        isActive ? 'bg-[#003297] text-white' : 'text-[#003297] hover:bg-[#001F5C] hover:text-white',
                         'rounded-md px-3 py-2 text-xl font-medium',
                       )}
                     >
@@ -77,8 +76,8 @@ const Navbar: React.FC = () => {
 
           <div className="absolute inset-y-0 right-0 flex items-center pr-2 sm:static sm:inset-auto sm:ml-6 sm:pr-0">
             <Link
-              className="rounded-xl border border-solid border-transparent flex items-center justify-center bg-[#bf360c] gap-2 hover:bg-[#b86918] dark:hover:bg-[#b86918] sm:text-base h-10 sm:h-12 px-4 sm:px-12 text-xs md:text-sm font-medium md:font-semibold"
-              href="/download"
+              className="rounded-xl border border-solid border-transparent flex items-center justify-center bg-[#001F5C] gap-2 hover:bg-[#003297] dark:hover:bg-[#003297] sm:text-base h-10 sm:h-12 px-4 sm:px-12 text-xs md:text-sm font-medium md:font-semibold"
+              href="/pakua"
               role="button"
               rel="noopener noreferrer"
             >
@@ -101,7 +100,7 @@ const Navbar: React.FC = () => {
                 href={item.path}
                 aria-current={isActive ? 'page' : undefined}
                 className={classNames(
-                  isActive ? 'bg-[#b86918] text-white' : 'text-primary hover:bg-[#bf360c] hover:text-white',
+                  isActive ? 'bg-[#003297] text-white' : 'text-primary hover:bg-[#001F5C] hover:text-white',
                   'block rounded-md px-3 py-2 text-base font-medium',
                 )}
               >

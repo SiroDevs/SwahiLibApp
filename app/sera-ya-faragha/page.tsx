@@ -8,10 +8,10 @@ export default function PrivacyPolicy() {
     <div id="privacy-policy" className="my-5 lg:my-16 relative mx-auto max-w-3xl lg:max-w-5xl px-4 sm:px-6 lg:px-8">
       <div className="lg:py-8">
         <h1 className="text-4xl font-medium text-primary p-2 px-5 text-2xl rounded-md lg:text-[3.2rem] lg:leading-[4.5rem]">
-          Our Privacy Policy
+          Sera ya Faragha
         </h1>
         <h3 className="text-2xl text-primary p-2 px-5 text-x2l rounded-md">
-          Privacy Policy for SongLib
+          Sera ya Faragha ya SwahiLib
         </h3>
       </div>
 
